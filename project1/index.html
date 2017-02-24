@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fraction Action Kids Card Game</title>	
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>      
+      	<!-- Latest compiled and minified CSS -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!--Optional Theme-->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+
+<!-- Latest compiled and minified JavaScript -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+</head> 
+<body>	 
+
+<!--Logo and Share Buttons-->
+		<header>
+			<img id = "logo" src = "images/logo.png" >
+			<div>
+<!-- 				<ul id = 'share'>
+					<li img src = "#" href ="#">Facebook</li>
+					<li img src = "#" href ="#">Twitter</li>
+					<li img src = "#" href ="#">Instagram</li>
+				</ul> -->
+			</div>
+			</header>
+		<div class = "clearfix">			
+		</div>
+
+<!--Board Area-->
+			<div id = "board">
+<!-- 				<div id = 'winner'>
+					<h2>Great Job!</h2>
+				</div> -->
+					<div class = "cards" id = '1' data-value = ""><img src="">
+					</div>	
+
+					<div class = "cards" id = '2' data-value = "">
+					</div>
+
+					<div class = "cards" id = '3' data-value = "">		
+					</div>
+
+					<div class = "cards" id = '4' data-value = "">
+					</div>
+
+					<div class = "cards" id = '5' data-value = "">
+					</div>	
+
+					<div class = "cards" id = '6' data-value = "">
+					</div>	
+
+					<div class = "cards" id = '7' data-value = "">
+					</div>
+
+					<div class = "cards" id = '8' data-value = "">		
+					</div>
+
+					<div class = "cards" id = '9' data-value = "">
+					</div>
+
+					<div class = "cards" id = '10' data-value = "">
+					</div>			
+
+					<div class = "cards" id = '11' data-value = "">
+					</div>	
+
+					<div class = "cards" id = '12' data-value = "">
+					</div>
+
+					<div class = "cards" id = '13' data-value = "">		
+					</div>
+
+					<div class = "cards" id = '14' data-value = "">
+					</div>
+
+					<div class = "cards" id = '15' data-value = "">
+					</div>				
+			</div>
+
+<!--Card in Play-->
+			<div id = "inPlay">	
+				<div class = "equals">
+					<div  class = "playCard" id = '16' data-value= "">
+					</div>
+				</div>	
+<!--Display Deck-->
+				<!-- <div id = "deck"></div>
+					<div  class = "playCard" data-value = ".5">2/4
+					</div> -->
+
+<!--Timer Area-->		
+				 <div class = "time">
+						<h3>TIME:</h3>
+						<h1 class = "clockValue">??</h1>
+					</div>
+
+<!--Scoring Display Area-->			
+				<div id = "score">
+					<h3>SCORE:</h3>
+					<h1 class = 'scoreValue'>00000</h1>
+			</div>
+
+<!--Buttons that Control Game-->				
+			<div id = "buttons">
+					<button class = 'start'>START</button>
+					<button class = 'reset'>RESET</button>
+					<button class = 'easy'>EASY</button>
+					<button class = 'hard'>HARD</button>
+					<button class = 'next'>NEXT</button>
+			</div>	
+			</div>
+</div>		
+<!--Instructions and Author-->	
+			<div id = "footer">	
+				<article id = 'instruct'></article>
+					<p><span>INSTRUCTIONS:</span>
+					<br> 1. Click EASY or HARD to set timer 
+					<br> 2. Look at the card in play.  Press START 
+					<br> 3. CLICK on every equivalent fraction on the board
+					<br> 4. Click NEXT to deal more cards
+					<br> 5. Find as many as you can before time expires.
+					</p>
+			</div>	
+			<div id = "logo2"></div>	
+				<p id = 'about'><img src = "https://s.evbuc.com/https_proxy?url=http%3A%2F%2Fculturelabx.com%2Fwp-content%2Fuploads%2F2014%2F10%2Fgeneral-assembly-logo.png&sig=ADR2i7_SVYyXSfxA0eqT_cGehyxS7RPckQ" id = "GAlogo">
+				<br>
+				by GA Student John Favors 2017
+				</p>
+			</div>	
+		</div>	
+	<audio id = "bgMusic" src = "audio/Marsel_Minga_-_04_-_Kar_Designer.mp3" autoplay=""></audio>
+	<audioid id = "buzz" src = "audio/Wrong-answer-sound-effect.mp3"> </audio>
+	<script src="js/app.js"></script>
+</body>
+</html>
+

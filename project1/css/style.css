@@ -1,0 +1,158 @@
+/*Header Area*/
+body {
+
+}
+
+header{
+	width: 100%;
+	height: 100px;
+	background-color: #E8B460;
+	border-radius: 10px;
+	margin: 5px;
+}
+
+#logo {
+	padding: none;
+	margin-top: -37px;
+}
+
+#logo2 {
+	padding: -50px;
+}
+
+.clearfix {
+	clear: all;
+}
+
+/*Board Area*/
+#board {
+	width:73%;
+	height: 510px;
+	background: lightgreen;
+	border-radius: 20px;
+	margin: 3px;
+	float: left;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.cards, .playCard{
+	font-family: 'Anton', sans-serif;
+	width: 100px;
+	height: 150px;
+	border:        1px solid #274e13;
+	border-radius: 10px;
+	margin: 10px;
+	background-color: white;
+	float: left;
+	text-align: center;
+	font-size: 2.5em;
+	align-content: space-between;
+	word-wrap: break-word;
+}
+
+.backCards {
+	position: relative;
+	width: 100px;
+	height: 150px;
+	border-radius: 10px;
+	margin: 10px;
+	float: left;
+	align-content: space-between;
+	background-color: white;
+	background: url("images/algorithms-1641852_640.png") width 90px;
+}
+
+#inPlay {
+	width: 25%;
+	height: 510px;
+	background: lightblue;
+	border-radius: 20px;
+	margin: 3px;
+	float: right;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.clickCorrect {
+	background-color: lightgreen;
+}
+
+.timer {
+	width: 100px;
+	margin: 5px;
+	text-align: center;
+}
+
+#score {
+	width: 100px;
+	margin: 5px;
+	text-align: center;
+}
+
+.time {
+	font-size: 1em;
+	color: green;
+	font: arial;
+}
+
+#score {
+	font-size: 1em;
+	color: green;
+	font: arial;
+}
+
+
+#buttons, #equals {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.blinkRed {
+	background-color: red;
+}
+
+button {
+background:    #93c47d;
+background:    -webkit-linear-gradient(#93c47d, #274e13);
+background:    linear-gradient(#93c47d, #274e13);
+border:        1px solid #274e13;
+border-radius: 5px;
+color:         #fff;
+display:       inline-block;
+padding:       8px 20px;
+font:          normal 700 18px/1 "Calibri", sans-serif;
+text-align:    center;
+text-shadow:   1px 1px 0 #000;
+margin: 5px;
+width: 85px;
+height: 34px;
+}
+
+button#active {
+	background: green;
+}
+
+button#hidden {
+	background: grey;
+}
+
+#footer {
+	width: 100%;
+	height: 125px;
+	background: #E8B460;
+	border-radius: 10px;
+	margin:5px;
+	float: left;
+	color: #9B42E8;
+	padding-left: 10px;
+}
+
+
+
+
+
+
